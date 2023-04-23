@@ -1,19 +1,55 @@
 import React from "react";
-import { FlatList, StyleSheet, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 
 import NewItem from "./NewItem";
 import HeaderSwiper from "./components/HeaderSwiper";
 
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import HeaderSearch from "../../components/HeaderSearch";
+
 const listData = [{ key: 'Devin' }, { key: 'Dan' }, { key: 'Dominic' }]
+
+const Tab = createMaterialTopTabNavigator();
+
+function HomeScreen() {
+    return <FlatList data={listData} renderItem={item => <NewItem/>} ListHeaderComponent={<HeaderSwiper/>}/>
+}
+
+function Home2Screen() {
+    return <View>
+        <Text>Home2Screen</Text>
+    </View>
+}
+
 
 export default function Home() {
     return <View style={styles.container}>
-
-        <FlatList data={listData} renderItem={item => <NewItem/>} ListHeaderComponent={<HeaderSwiper/>}/>
-
+        <HeaderSearch/>
+        <Tab.Navigator
+            screenOptions={{
+                tabBarLabelStyle: { fontSize: 16, color: '#504249' },
+                tabBarActiveTintColor: '#8D5D3D',
+                tabBarItemStyle: { width: 100 },
+                tabBarGap: 10,
+                // tabBarStyle: { backgroundColor: 'powderblue' },
+                tabBarIndicatorStyle: {
+                    backgroundColor: '#8D5D3D',
+                    margin: 5
+                },
+            }}>
+            <Tab.Screen name="Top" component={HomeScreen}/>
+            <Tab.Screen name="Home2" component={Home2Screen}/>
+        </Tab.Navigator>
     </View>
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1 },
+    container: { flex: 1, backgroundColor: '#fff' },
+    viewPager: {
+        flex: 1,
+    },
+    page: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
 });
