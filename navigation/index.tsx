@@ -14,7 +14,7 @@ const BottomTab = createBottomTabNavigator()
  * @constructor
  */
 function BottomTabNavigator(){
-  return <BottomTab.Navigator initialRouteName="Detail">
+  return <BottomTab.Navigator initialRouteName="Home">
     <BottomTab.Screen name="Home" component={Home} options={{headerShown: false}} />
     <BottomTab.Screen name="Detail" component={Detail}/>
   </BottomTab.Navigator>

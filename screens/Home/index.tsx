@@ -1,8 +1,19 @@
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
 
-export default function Home(){
-  return <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Home 1111!</Text>
-  </View>
+import NewItem from "./NewItem";
+import HeaderSwiper from "./components/HeaderSwiper";
+
+const listData = [{ key: 'Devin' }, { key: 'Dan' }, { key: 'Dominic' }]
+
+export default function Home() {
+    return <View style={styles.container}>
+
+        <FlatList data={listData} renderItem={item => <NewItem/>} ListHeaderComponent={<HeaderSwiper/>}/>
+
+    </View>
 }
+
+const styles = StyleSheet.create({
+    container: { flex: 1 },
+});
