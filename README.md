@@ -1,3 +1,7 @@
+# 设计
+https://js.design/f/5SqDsu?p=b-BfRflSAv&mode=programmer
+
+
 # 使用的库
 - `@react-navigation/native-stack` 屏幕视图
 - `@react-navigation/bottom-tabs` 屏幕底部Tab

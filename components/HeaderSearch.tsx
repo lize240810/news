@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 
 export default function HeaderSearch() {
-    return <LinearGradient style={styles.container} colors={['#8C5D3E', '#504249']}>
+    return <LinearGradient style={styles.container} colors={['#8C5D3E', '#504249']} start={[0, 0.5]} end={[1, 0.5]}>
         <View style={styles.inputContainer}>
             <AntDesign name="search1" size={24} color="#504249"/>
             <TextInput style={{ padding: 10, flex: 1, color: '#504249' }} placeholder="多学校发布停课通知"/>
