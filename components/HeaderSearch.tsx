@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TextInput, View } from "react-native";
-import { AntDesign, FontAwesome } from '@expo/vector-icons';
+import { AntDesign, Ionicons } from '@expo/vector-icons';
+import {  } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 
 
@@ -10,8 +11,7 @@ export default function HeaderSearch() {
             <TextInput style={{ padding: 10, flex: 1, color: '#504249' }} placeholder="多学校发布停课通知"/>
         </View>
         <View style={styles.buttonContainer}>
-            <FontAwesome name="send" size={24} color="#fff" style={{ marginRight: 5 }}/>
-            <Text style={{color: "#fff"}}>发布</Text>
+            <Ionicons name="scan" size={24} color="#FFFFFF8C" style={{ marginRight: 5 }} />
         </View>
     </LinearGradient>
 }

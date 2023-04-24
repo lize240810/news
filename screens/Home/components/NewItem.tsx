@@ -27,6 +27,7 @@ export default function NewItem() {
                         {ImgArr.map((image, index) =>
                             <Image key={index} source={{ uri: image }} style={styles.moreImages}/>)
                         }
+                        {ImgArr.length % 3 === 2 && <View style={styles.moreImages}></View>}
                     </View>
                 }
             </View>
