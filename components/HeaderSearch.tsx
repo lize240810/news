@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         borderRadius: 360,
         margin: 10,
         paddingLeft: 10,
-        flex: 4,
+        flex: 1,
         backgroundColor: 'rgba(255, 255, 255, 0.55)',
         color: '#504249',
         flexDirection: "row",
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     buttonContainer: {
-        flex: 1,
+        marginRight: 10,
         flexDirection: "row",
         alignItems: "center",
         color: '#fff'
