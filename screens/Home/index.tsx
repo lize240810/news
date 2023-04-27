@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList, StyleSheet, Text, View } from "react-native";
 
-import NewItem from "./components/NewItem";
+import NewItem from "../../components/NewItem";
 import HeaderSwiper from "./components/HeaderSwiper";
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';

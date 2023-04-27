@@ -10,6 +10,7 @@ specifiers:
   '@react-navigation/stack': ^6.3.16
   '@types/react': ~18.0.14
   expo: ~48.0.11
+  expo-checkbox: ^2.3.1
   expo-linear-gradient: ^12.1.2
   expo-status-bar: ~1.4.4
   react: 18.2.0
@@ -34,6 +35,7 @@ dependencies:
   '@react-navigation/native-stack': registry.npmmirror.com/@react-navigation/native-stack/6.9.12_tckmbv3si7efmhn4c3n5gdvxpa
   '@react-navigation/stack': registry.npmmirror.com/@react-navigation/stack/6.3.16_mewwxoooywvxijrwk23dqflz6m
   expo: registry.npmmirror.com/expo/48.0.11_@babel+core@7.21.4
+  expo-checkbox: registry.npmmirror.com/expo-checkbox/2.3.1
   expo-linear-gradient: registry.npmmirror.com/expo-linear-gradient/12.1.2_expo@48.0.11
   expo-status-bar: registry.npmmirror.com/expo-status-bar/1.4.4
   react: registry.npmmirror.com/react/18.2.0
@@ -5606,6 +5608,12 @@ packages:
     transitivePeerDependencies:
       - expo
       - supports-color
+    dev: false
+
+  registry.npmmirror.com/expo-checkbox/2.3.1:
+    resolution: {integrity: sha512-CTIabriK5xbtDnI9U5Hve82/WG85XLI4GLYSRTT1XST21HjQ7mDaeiYm7DnKzcgM+qeBwmbg3crJYnp7WW/8Ew==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/expo-checkbox/-/expo-checkbox-2.3.1.tgz}
+    name: expo-checkbox
+    version: 2.3.1
     dev: false
 
   registry.npmmirror.com/expo-constants/14.2.1_expo@48.0.11:

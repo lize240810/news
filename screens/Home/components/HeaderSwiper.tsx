@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     child: { width, justifyContent: 'center' },
     text: { fontSize: width * 0.2, textAlign: 'center' },
     swiper: {
-        width
-        // width: 393, height: 187
+        width,
+        height: 187
     }
 });
